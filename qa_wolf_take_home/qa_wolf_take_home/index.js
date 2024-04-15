@@ -29,7 +29,7 @@ async function saveHackerNewsArticles() {
       fetch(url)
         .then(response => {
           if (!responce.ok){
-            throw new Error('Network responce was not ok'):
+            throw new Error('Network responce was not ok');
           }
           return responce.text
         })
