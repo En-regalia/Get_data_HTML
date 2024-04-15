@@ -41,7 +41,7 @@ async function saveHackerNewsArticles() {
           method: "POST",
           url: "https://api.edenai.run/v2/text/summarize",
           headers: {
-            authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzRmZTdkYzItNzQ4Mi00ZWU0LWI4MDUtZDhiNGY2M2FiOTM3IiwidHlwZSI6ImFwaV90b2tlbiJ9.fCQnifCGu9vUB9cVZiuuosdbLh3voeh9InKW4PCsu60",
+            authorization: "Bearer your_activation_code",
           },
           data: {
             output_sentences: 1,
