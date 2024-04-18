@@ -26,37 +26,19 @@ async function saveHackerNewsArticles() {
       const title = titleElement.innerText.trim();
       // section to call on eden AI to summarise article
       
-      fetch(url)
-        .then(response => {
-          if (!responce.ok){
-            throw new Error('Network responce was not ok');
-          }
-          return responce.text
-        })
-        .then(body =>{
-          url_body = body;
-        });
-
-        const options = {
-          method: "POST",
-          url: "https://api.edenai.run/v2/text/summarize",
+      try {
+        const response = await axios.post("https://api.edenai.run/v2/text/summarize", {
+          output_sentences: 1,
+          providers: "openai",
+          text: url,
+          language: "en",
+          fallback_providers: "",
+        }, {
           headers: {
             authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzRmZTdkYzItNzQ4Mi00ZWU0LWI4MDUtZDhiNGY2M2FiOTM3IiwidHlwZSI6ImFwaV90b2tlbiJ9.fCQnifCGu9vUB9cVZiuuosdbLh3voeh9InKW4PCsu60",
           },
-          data: {
-            output_sentences: 1,
-            providers: "openai",
-            text: url_body,
-            language: "en",
-            fallback_providers: "",
-          },
-        };
- 
-    axios
-      .request(options)
-      .then((response) => {
-        summary = response.data; 
-      })
+        });
+        const summary = response.data.summary;
     
                           
       // push extracted title and url to array
