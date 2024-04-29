@@ -1,45 +1,36 @@
-# 🐺 QA Wolf Take Home Assignment
+# Article Summarizer
 
-Welcome to the QA Wolf take home assignment for our [QA Engineer](https://www.notion.so/qawolf/QA-Wolf-QA-Engineer-Remote-156203a1e476459ea5e6ffca972d0efe) role! We appreciate your interest and look forward to seeing what you come up with.
+Welcome to the Article Summarizer application!
 
-## Instructions
+This JavaScript application fetches a selection of articles and generates summaries for each. It utilizes the Fetch API to retrieve articles from a specified source, processes the content to create concise summaries, and then saves these summaries in a CSV (Comma-Separated Values) file.
 
-This assignment has two questions as outlined below. When you are done, send [laura@qawolf.com](mailto:laura@qawolf.com) a link to a zip file of this folder on Google Drive.
+## Features
 
-### Question 1
+- Fetch API Integration: Utilizes the Fetch API to retrieve articles from a specified source.
+- Summarization: Automatically generates summaries for each article to provide concise overviews.
+- CSV Export: Saves the article summaries in a CSV file for easy analysis and reference.
 
-In this assignment, you will create a basic script on [Hacker News](https://news.ycombinator.com/) using JavaScript and Microsoft's [Playwright](https://playwright.dev/) framework.
+## How to Use
 
-1. Install node modules by running `npm i`.
+- Clone the repository to your local machine.
+- Navigate to the directory where the application is located.
+- Open the JavaScript file (article_summarizer.js) in your preferred code editor.
+- Update the source URL or configuration settings as needed.
+- Run the JavaScript file using Node.js: node article_summarizer.js.
+- The application will fetch articles, generate summaries, and save them in a CSV file.
 
-2. Edit the `index.js` file in this project to go to [Hacker News](https://news.ycombinator.com/) and save the title and URL of the top 10 articles to a CSV file. You can run your script with the `node index.js` command.
+## Configuration
+You can configure the application by modifying variables in the JavaScript file, such as:
 
-Note that you are welcome to update Playwright or install other packages as you see fit.
+- sourceURL: The URL of the source from which articles will be fetched.
+- summaryLength: The desired length of the article summaries.
+  
+## Requirements
 
-### Question 2
+Node.js installed on your local machine.
 
-Why do you want to work at QA Wolf, in 250 words or less? Provide your answer in the `why_qa_wolf.txt` file in this project.
+## Contribution
+Contributions are welcome! If you have any suggestions for improvements or new features, feel free to submit a pull request.
 
-## Frequently Asked Questions
-
-### What is your hiring process? When will I hear about next steps?
-
-This take home assignment is the first step in our hiring process, followed by a final round interview if it goes well. **We review every take home assignment submission and promise to get back to you either way within one week (usually sooner).** The only caveat is if we are out of the office, in which case we will get back to you when we return. If it has been more than one week and you have not heard from us, please do follow up.
-
-The final round interview is a 2-hour technical work session that reflects what it is like to work here. We provide a $100 stipend for your time for the final round interview regardless of how it goes. After that, there may be a short chat with our director about your experience and the role.
-
-Our hiring process is rolling where we review candidates until we have filled our openings. If there are no openings left, we will keep your contact information on file and reach out when we are hiring again.
-
-### How do you decide who to hire?
-
-We evaluate candidates based on three criteria:
-
-- Technical ability (as demonstrated in the take home and final round)
-- Customer service orientation (as this role is customer facing)
-- Alignment with our values (captured [here](https://www.notion.so/qawolf/QA-Wolf-QA-Engineer-Remote-156203a1e476459ea5e6ffca972d0efe))
-
-This means whether we hire you is based on how you do during our interview process, not on your previous experience (or lack thereof). Note that you will also need to pass a background check to work here as our customers require this.
-
-### How can I help my application stand out?
-
-We've found that our best hires have been the most enthusiastic throughout our process. If you are very excited about working here, please feel free to go above and beyond on this assignment.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
