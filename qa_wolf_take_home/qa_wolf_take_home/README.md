@@ -28,6 +28,9 @@ You can configure the application by modifying variables in the JavaScript file,
 ## Requirements
 
 Node.js installed on your local machine.
+'AI_key' will need to be locally defined and can be obtained from the below
+
+- Guide - https://docs.edenai.co/reference/start-your-ai-journey-with-edenai
 
 ## Contribution
 Contributions are welcome! If you have any suggestions for improvements or new features, feel free to submit a pull request.
